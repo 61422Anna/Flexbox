@@ -1,0 +1,120 @@
+body {
+	font-family: 'Indie Flower', cursive;
+	color: black;
+	background: url('https://media1.fdncms.com/clevescene/imager/u/original/12468919/otters.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+#heading {
+	padding: 42px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-color: #eBeBeB;
+	-webkit-animation: myAnimation 5s infinite;
+	animation: myAnimation 5s infinite;
+	border: 10px solid white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+h1 {
+	font-family: 'Eater', cursive;
+}
+@-webkit-keyframes 'myAnimation' {
+	50%{
+		background-color: #d3d3d3;
+	}
+}
+@keyframes 'myAnimation' {
+	50% {
+		background-color: #d3d3d3;
+	}
+}
+#page-title {  }
+.content {
+	font-size: 1.2em;
+	background-color: #eBeBeB;
+	padding: 20px;
+	border-left: 10px solid #ab3939;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#sub {
+	background-color: #eBeBeB;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 3px;
+	padding-left: 42px;
+	margin-top: 15px;
+	width: 50%;
+}
+.highlight {
+	background-color: yellow;
+	font-weight: 650;
+	font-style: italic;
+	font-variant: small-caps;
+	text-transform: uppercase;
+	text-decoration: underline line-through overline;
+	text-shadow: 5px 3px 1px #b02626;
+}
+.package {
+  -webkit-transition: background-color 500ms ease-out 1s;
+  -moz-transition: background-color 500ms ease-out 1s;
+  -o-transition: background-color 500ms ease-out 1s;
+  transition: background-color 500ms ease-out 1s;
+  background-color: #e8e8e8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 50px;
+  font-size: 1.2em;
+  border-bottom: 10px solid green;
+  width: 200px;
+}
+.package:hover {
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
+ 
+ #pricing-table {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+ a:link {
+ 	color: black;
+ }
+a:visited {
+	color: green;
+}
+a:hover {
+	color: #ab3939;
+}
+a:active {
+	color: blue;
+}
+.content-bullets {
+	padding-left: 40px;
+	font-size: 1.5em;
+	list-style: square;
+	background-color: #e8e8e8;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+#blocks {
+  position: absolute;
+}
+.block {
+  height: 140px;
+  width: 250px;
+  background-color: #ab3939;
+  float: left;
+  margin: 20px;
+}

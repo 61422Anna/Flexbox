@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Forms</title>
+  </head>
+
+  <body>
+    <form action="contact_form.php" method="get" oninput="invoice.value=parselInt(total.value)+parseInt(shipping.value)">
+        <label form="name">Name:</label>
+        <input type="text" name="name" placeholder="SNOW, JON" required><br>
+	    <label form="name">Email:</label>
+        <input type="text" name="email" value="jon@snow.com" required><br>
+        <label for="message">Message:</label><br>
+	    <textarea name="message" rows="15" cols="100"></textarea><br>
+	    <label for="options">Packing Requirements (select all that apply):</label><br>
+	    <input type="checkbox" name="options" value="premium"> Premium<br>
+	    <input type="checkbox" name="options" value="automated"> Automated<br>
+   	    <input type="checkbox" name="options" value="rush"> Rush<br>
+   	    <label for="delivery">Shipping Preference:</label><br>
+		<input type="radio" name="delivery" value="in_store"> In Store<br>
+		<input type="radio" name="delivery" value="shipping"> Shipping<br>
+		<label for="source">How did you hear about us?</label>
+		<select name="source" multiple="true">
+  			<option value="google">Google</option>
+   			<option value="yahoo">Yahoo</option>
+   			<option value="fb">Facebook</option>
+   			<option value="twitter">Twitter</option>
+		</select>
+		<label for="shipping_method">Shipping Method:</label>
+		<select name="shipping_method">
+  		  <optgroup label="Business">
+    		<option value="biz_overnight">Overnight</option>
+    		<option value="biz_groung">Ground</option>
+  		  </optgroup>
+  		  <optgroup label="Residential">
+    		<option value="res_overnight">Overnight</option>
+    		<option value="res_groung">Ground</option>
+  		  </optgroup>
+		</select>
+        <label for="total">Subtotal:</label><br>
+		<input type="text" name="total" value="0" /><br>
+		<label for="shipping">Shipping:</label><br>
+		<input type="text" name="shipping" value="9" /><br>
+		<label for="invoice">Total for invoice: </label><br>
+		<output name="invoice" for="total tax"></output>
+	    <input type="submit" value="Send Contact Request">
+    </form>
+  </body>
+
+</html>
